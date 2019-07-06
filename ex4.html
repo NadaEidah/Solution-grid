@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Exercise #4: Simple Grid Layout </title>
+	<style>
+		.box-1 { grid-area: header; }
+		.nav { grid-area: menu; }
+		.article { grid-area: main; }
+		.img { grid-area: right; }
+		.footer { grid-area: footer; }
+
+		.container{
+				display: grid;
+				grid-template-areas:
+				 'header header header header header header'
+				 'menu main main main right right'
+				 'menu footer footer footer footer footer';
+				  grid-gap: 10px;
+				  padding: 10px;
+
+		}
+		.box-1{
+
+			background-color: black;
+			padding: 40px;
+			font-size:20px;
+			margin-bottom: 20px;
+	
+		}
+		.box-1 a {
+				color: #FA7505;
+		}
+
+		.nav{
+			
+			background-color: #F7C9A3;
+			color: #FA7505;
+			width: 200px;
+			height: 800px;
+
+		}
+
+		.article
+		 {
+		 	width: 1000px;
+		 	height: 700px;
+			background-color: #FAB07D;
+		}
+
+		.footer ul {
+			list-style-type: none;
+			background-color: #FF9953;
+			display: grid;
+			grid-template-columns: 10% 10% 10%;
+			height: 30px;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="box-1">
+	<a href="#">Orange</a>
+	<a href="#">Main</a>
+	<a href="#">Personal</a>
+	</div>
+
+	
+
+	<div class="nav">
+		<ul>
+			<li> <a href="https://eshop.orange.jo/en/internet/adsl-offers.html?utm_source=orangejo&utm_medium=link&utm_campaign=homepage&utm_term=homepage&utm_content=homepage"></a> ADSL Offers </li>
+
+			<li> <a href="https://eshop.orange.jo/en/internet/fiber-offers.html?utm_source=orangejo&utm_medium=link&utm_campaign=homepage&utm_term=homepage&utm_content=homepage"></a> Fiber Offers </li>
+
+			<li> <a href="https://eshop.orange.jo/en/internet/iew-postpaid.html"></a> 4G Offers </li>
+
+			<li> <a href="https://eshop.orange.jo/en/prepaid-orange-net-offers/orange-net-offers.html?utm_source=orangejo&utm_medium=link&utm_campaign=homepage&utm_term=homepage&utm_content=homepage"></a> Prepaid Orange net</li>
+		</ul>
+	</div>
+
+				<div class="img">
+		<img src="orgadv.jpg">
+	</div>
+
+		<div class="article"> 
+		 	<article>
+		 		<h2> About Orange Jordan </h2>
+		 		Orange Jordan is one of the 29 subsidiaries of Orange Group, a leading telecommunications operator in the world that ranks in the top ten among its competitors.. Orange Jordan is an international brand with a local spirit, applying globally acquired experience to initiate and maintain a digital transformation of the country that will lead to greater opportunities at shared socioeconomic prosperity for its people. It has an expanding customer base of more than five million, a network of around 1,800 dedicated employees, and more than 55 branches. <br>
+				Orange Jordan forms the backbone of the Kingdom’s ICT sector, carrying the flag behind His Majesty King Abdullah II’s vision of turning Jordan into a regional hub for ICT by delivering innovative and advanced IT and telecommunications solutions to meet the aspirations and essentials of individual and enterprise customers nationwide. As a result, the company currently ranks as the strongest provider of fast internet in the market and resolutely continues to move forward in its endeavors to invest in the future of the country and its people by introducing the most advanced technologies and enhancing the country’s physical infrastructure to make these technologies a viable reality.
+				Orange Jordan provides leading, integrated telecommunications throughout the Kingdom, offering individuals and enterprises a vast portfolio of fixed, mobile, and internet services. The company especially focuses on providing unmatched connectivity to all of its customers through its latest endeavors into Next Generation Networks (NGNs), which include LTE, LTE-M, LTE-IoT, Fiber-To-The Home (FTTH), Fiber-To-The-Business (FTTB), and IMS (IP Multimedia Subsystem).<br>
+				Through its Enterprise Business Unit (EBU), Orange Jordan offers its partnered enterprises the elevated global expertise of Orange Business Services (OBS). Empowered by the most advanced technologies, know-how, and consultation that help businesses stay at the forefront, the company provides a range of corporate solutions such as, Unified Threat Management UTM, Distributed Denial of Service DDoS, Cloud, Data Centre, Network Equipment (LAN: Locate Area Network), Vehicle Tracking and IPTV . Likewise, giving B2B customers unparalleled speed and reliability, its new FTTB services successfully enable businesses to meet their connectivity needs with smart offices to make their operations more efficient. Orange Jordan is also focusing on the concept of Smart Cities, with a strategy that spans three key sections that comprise all aspects of operations for growing urban areas to meet their challenges, bridging the gap between the release of the latest technologies and the ability of cities to adopt them as part of their current infrastructures. Connecting people to all that is essential to them is at the very core of what Orange Jordan does, a commitment solidified by the five drivers of the company’s continually motivating corporate strategy Essentials 2020 that was launched in 2015. This resolved framework is upheld by five key drivers, including offering richer connectivity options, reinventing customer relationships, building a people-oriented and digital employer model, accompanying the transformation of enterprise customers, and diversifying operations by effectively capitalizing on assets. Identifying and implementing new ways to forge lasting relationships with its customers, the company has sparked a revolution in the way people are served by telecommunications operators.<br>
+                In a quickly changing digital era of hyper-connectivity, Orange Jordan remains a key partner of the people in all corners of the Kingdom in spreading a culture of development and progress. The company intrinsically cares about forming a real bond with the community, one that feels increasingly more friendly and understanding of the needs of individual members of society, to contribute to the growth of economy and wellbeing of Jordanians and to bridge digital divides. In alignment with a focused corporate social responsibility strategy, it continues to build on its resolved commitment to establish fully sustainable programs and initiatives working alone or in partnership with various Non-Governmental Organizations NGOs in order to enhance the community from within and put a better collective future within the reach of all those whose lives the company touches. Orange Jordan also focuses on Corporate Entrepreneurship Responsibility (CER) by supporting and training startups and the bright entrepreneurs behind them through the company’s growth-mode startup accelerator program, Business Innovation Growth (BIG).
+		 		</article>
+
+		</div>
+
+			<div class="footer">
+				<footer>
+					<ul>
+						<li> Follow us </li>
+						<li>Contact us</li>
+						<li>Locate store</li>
+						
+					</ul>
+
+					  
+				</footer>
+			</div>
+	
+
+	</div>
+</body>
+</html>

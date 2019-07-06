@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+	<title> Exercise #2: Photo Gallery </title> 
+</head>
+<style>
+	div{
+		background-color: #C5BCF1;
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: auto auto auto auto auto auto ;
+ 		grid-gap:15px;
+		
+		 
+	}
+	div > div{
+		 background-color: rgba(255, 255, 255, 0.8);
+ 		align-items: center;
+  
+	}
+
+	.img-8 {
+ 		grid-area: 1 / 2 / 5 / 6;
+ 			
+		}
+	div img {
+		width: 300px;
+		height: 300px;
+	}
+</style>
+<body>
+	<div>
+	<img src="pic1.jpg">
+	<img src="4.jpg">
+	<img src="2.jpg">
+	<img src="5.jpg">
+	<img src="3.jpg">
+	<img src="6.jpg">
+	<img src="7.jpg">
+	<img src="10.jpg">
+	<div class="img-8"><img src="8.jpg"  
+		style="width: 1200px; height:700px;"></div>
+	<img src="9.jpg">
+	<img src="moldives.jpg">
+	<img src="france.jpg">
+
+	</div>
+</body>
+</html>
+
